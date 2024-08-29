@@ -20,4 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::resource('customers', CustomersController::class);
+Route::get('/customers', [CustomersController::class, 'index']);
+Route::get('/customers/{id}', [CustomersController::class, 'show']);

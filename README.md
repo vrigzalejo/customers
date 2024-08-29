@@ -64,3 +64,20 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+# Installation
+
+1. Run in terminal `composer update`.
+2. Copy `.env.example` to `.env` and configure.
+3. Create database that was set from `.env`.
+4. Run `php artisan doctrine:schema:update --force` to migrate the tables.
+5. Run `php artisan make:command ImportCustomers` to import the customers.
+ 
+### Routes
+`/api/customers`
+`/api/customers/{id}` 
+
+### Testing
+`vendor\bin\phpunit`
