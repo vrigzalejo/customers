@@ -73,7 +73,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 2. Copy `.env.example` to `.env` and configure.
 3. Create database that was set from `.env`.
 4. Run `php artisan doctrine:schema:update --force` to migrate the tables.
-5. Run `php artisan make:command ImportCustomers` to import the customers.
+5. Run `php artisan customers:import` to import the customers.
  
 ### Routes
 `/api/customers`
